@@ -7,13 +7,6 @@ import os
 import sys
 from pathlib import Path
 
-try:
-    import numpy as np
-    HAS_NUMPY = True
-except ImportError:
-    HAS_NUMPY = False
-    print("Warning: numpy not installed. Some features may be limited.")
-
 
 def load_ct_slices(directory_path):
     """
