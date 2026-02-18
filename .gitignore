@@ -54,6 +54,10 @@ data/
 *.log
 logs/
 
+# Generated reports
+*.txt
+!requirements.txt
+
 # OS
 .DS_Store
 Thumbs.db
