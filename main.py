@@ -5,7 +5,6 @@ Main entry point for the application
 
 import os
 import sys
-from pathlib import Path
 
 
 def load_ct_slices(directory_path):
@@ -20,7 +19,7 @@ def load_ct_slices(directory_path):
     """
     ct_slices = []
     if not os.path.exists(directory_path):
-        print(f"Error: Directory {directory_path} does not exist")
+        print(f"Error: Directory {directory_path} does not exist", file=sys.stderr)
         return ct_slices
     
     # Implementation for loading CT slices would go here
